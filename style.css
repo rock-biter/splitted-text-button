@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Vina+Sans&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Anton SC', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+a {
+	color: currentColor;
+	text-decoration: none;
+}
+
+body {
+	background-color: black;
+}
+
+#app {
+	padding: 2rem;
+}
+
+.button {
+	font-size: 3rem;
+	text-transform: uppercase;
+	line-height: 1;
+	position: relative;
+	overflow-y: hidden;
+	cursor: pointer;
+}
+
+.button .text div {
+	transform-origin: top left;
+}
+
+.button .shadow div {
+	transform-origin: bottom left;
+}
+
+.button .text {
+	color: white;
+}
+
+.button .shadow {
+	color: red;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
