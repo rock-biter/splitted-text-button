@@ -23,7 +23,7 @@ a {
 }
 
 body {
-	background-color: black;
+	background-color: white;
 }
 
 #app {
@@ -31,7 +31,7 @@ body {
 }
 
 .button {
-	font-size: 3rem;
+	font-size: 4rem;
 	text-transform: uppercase;
 	line-height: 1;
 	position: relative;
@@ -48,11 +48,11 @@ body {
 }
 
 .button .text {
-	color: white;
+	color: black;
 }
 
 .button .shadow {
-	color: red;
+	color: #7c60e1;
 	position: absolute;
 	top: 0;
 	left: 0;
