@@ -1,5 +1,5 @@
 import gsap from 'gsap'
-import { SplitText } from 'gsap/all'
+import { SplitText } from 'gsap-trial/SplitText'
 import './style.css'
 
 gsap.registerPlugin(SplitText)
