@@ -13,28 +13,30 @@ buttons.forEach((button) => {
 	const textSplit = new SplitText(text, { type: 'chars' })
 	const shadowSplit = new SplitText(shadow, { type: 'chars' })
 
-	gsap.set(shadowSplit.chars, { scaleY: 0, yPercent: 0 })
+	gsap.set(shadowSplit.chars, { scaleY: 0 })
+
+	const duration = (i) => 0.2 + i * 0.02
 
 	button.addEventListener('mouseenter', () => {
 		gsap.to(textSplit.chars, {
 			scaleY: 0,
-			duration: (i) => 0.15 + i * 0.02,
+			duration,
 		})
 
 		gsap.to(shadowSplit.chars, {
 			scaleY: 1,
-			duration: (i) => 0.15 + i * 0.02,
+			duration,
 		})
 	})
 
 	button.addEventListener('mouseleave', () => {
 		gsap.to(textSplit.chars, {
 			scaleY: 1,
-			duration: (i) => 0.15 + i * 0.02,
+			duration,
 		})
 		gsap.to(shadowSplit.chars, {
 			scaleY: 0,
-			duration: (i) => 0.15 + i * 0.02,
+			duration,
 		})
 	})
 })

@@ -24,14 +24,19 @@ a {
 
 body {
 	background-color: white;
+	margin: 0;
 }
 
 #app {
 	padding: 2rem;
+	display: flex;
+	height: 100vh;
+	justify-content: center;
+	align-items: center;
 }
 
 .button {
-	font-size: 4rem;
+	font-size: 10rem;
 	text-transform: uppercase;
 	line-height: 1;
 	position: relative;
